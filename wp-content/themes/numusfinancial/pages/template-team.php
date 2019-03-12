@@ -17,6 +17,10 @@ get_header(); ?>
 			<?php edit_post_link( __( 'Edit', 'base' ) ); ?>
 		<?php endwhile; ?>
 		
+		<?php if ( get_field('text_editor') ): 
+			the_field('text_editor');
+		endif; ?>
+		
 		<?php if( have_rows('management') ):
 			while ( have_rows('management') ) : the_row(); ?>
 			<?php $name = get_sub_field('name');
@@ -43,10 +47,10 @@ get_header(); ?>
 	</div>
 </section>
 
+<?php if( have_rows('staff') ): ?>
 <section id="our-team" class="blue-section">
 	<div class="container">
-	<?php if( have_rows('staff') ):
-		while ( have_rows('staff') ) : the_row(); ?>
+	<?php while ( have_rows('staff') ) : the_row(); ?>
 		<?php $name = get_sub_field('name');
 			$email = get_sub_field('email'); ?>
 		<div class="block-staff">
@@ -59,9 +63,10 @@ get_header(); ?>
 				</ul>
 			</div>
 		</div>
-    <?php endwhile;
-		endif; ?>
+    <?php endwhile; ?>
 	</div>
 </section>
+<?php endif; ?>
+
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

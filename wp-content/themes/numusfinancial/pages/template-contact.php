@@ -10,7 +10,7 @@ get_header(); ?>
 
 <section class="contact-section">
 	<div class="container">
-		<?php $location = get_field('google_map');
+		<!--<?php $location = get_field('google_map');
 			if( !empty($location) ):
 		?>
 		<div class="img-box">
@@ -18,7 +18,12 @@ get_header(); ?>
 			<div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
 		</div>
 		</div>
-		<?php endif; ?>
+		<?php endif; ?>-->
+		<div class="img-box">
+		<div class="acf-map">
+		<?php the_field('google_map_embed'); ?>
+		</div>
+		</div>
 		<div class="two-col">
 			<div class="col">
 				<div class="connect-text">
