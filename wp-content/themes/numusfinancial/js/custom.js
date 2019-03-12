@@ -1,4 +1,4 @@
-(function ($) {
+/*(function ($) {
   js = {
     init: function() {
 	    
@@ -35,7 +35,7 @@
 		return this.height( Math.max.apply(this, jQuery.map( this , function(e){ return jQuery(e).height() }) ) );
 	}
 
-})(jQuery);
+})(jQuery);*/
 
 jQuery(document).ready(function() { 
 	js.init();

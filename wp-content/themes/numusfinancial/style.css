@@ -2116,7 +2116,7 @@ span.line {
     display: inline-block;
 	width: 270px;
 	margin: 30px 10px 20px;
-	padding-bottom: 100px;
+	padding-bottom: 15px;
 	background: #fff;
 	box-shadow: 0 3px 6px rgba(1,1,1,.1);
 }
@@ -2124,6 +2124,7 @@ span.line {
 	#success-stories .container {
 		-ms-flex-pack: center;
 		justify-content: center;
+		align-items: stretch;
 	}
 	.block-success { width: 275px; }
 }
@@ -2200,13 +2201,13 @@ span.line {
 	padding: 4px 0;
 	border-top: 1px solid #dedede;
 }
-.block-success .bottom {
+/*.block-success .bottom {
 	position: absolute;
 	bottom: 16px;
 	left: 0;
 	right: 0;
 	padding-top: 12px;
-}
+}*/
 .block-success .bottom .row {
 	display: block;
 	padding-top: 6px;
