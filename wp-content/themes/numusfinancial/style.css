@@ -2101,8 +2101,6 @@ span.line {
 #success-stories .container {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
   -ms-flex-pack: center;
   justify-content: center;
   -ms-flex-wrap: wrap;
